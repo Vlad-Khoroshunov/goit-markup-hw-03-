@@ -1,12 +1,69 @@
+
+.table {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
 }
 
-.services {
-    font-size: 36px;
-    font-weight: 700;
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* header */
+
+.page-header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;   
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 76px;
 }
 
 .logo {
@@ -29,6 +86,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
+    display: block;
 }
 
 .link_webstudio:hover {
@@ -41,6 +100,7 @@ body {
 
 address {
     font-style: normal;
+    margin-left: auto;
 }
 
 .contacts {
@@ -48,6 +108,8 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    display: block;
+    padding: 24px 0;
 }
 
 .contacts:hover {
@@ -58,8 +120,19 @@ address {
     color: #404bbf;
 }
 
+/* Solution */
+
 .solutions {
     background-color: #2e2f42;
+    padding: 188px 0;
+}
+
+.solution-container {
+    display: flex;
+    align-items: center;    
+    flex-direction: column; 
+    align-items: center;
+  
 }
 
 .title {
@@ -68,7 +141,10 @@ address {
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
-}
+    display: flex;
+    width: 496px;
+    height: 120px;
+}    
 
 .knopka {
     background-color: #4D5AE5;
@@ -78,7 +154,13 @@ address {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
-    cursor: pointer
+    cursor: pointer;
+    display: block;
+    border-radius: 4px;
+    min-width: 169px;
+    padding: 16px 32px;
+    margin-top: 48px;
+    height: 56px;
 }
 
 .knopka:hover {
@@ -89,12 +171,44 @@ address {
     background-color: #404BBF;
 }
 
+/* Services */
+
+.services {
+    font-size: 36px;
+    font-weight: 700;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.service-table {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.section-services {
+    padding: 120px 156px;
+}
+
+.service-list {
+    width: calc((100% - 72px) / 4);
+}
+
 .services-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: #2e2f42;   
+    margin-bottom: 8px; 
 }
 
 .services-p {
@@ -105,8 +219,18 @@ address {
     font-weight: 400;
 }
 
+/* Team */
+
 .section-team {
     background-color: #F4F4FD;
+    padding: 120px 0;
+   
+}
+
+.team-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .title-team {
@@ -116,12 +240,26 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    padding-bottom: 72px;
+    padding-top: 120px;
+    
 }
 
 .teammate {
     background-color: #FFFFFF;
     font-size: 36px;
     font-weight: 700;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.discription {
+    padding: 32px 0;
 }
 
 .teammate-name {
@@ -130,6 +268,8 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px
 }
 
 .teammate-p {
@@ -138,6 +278,15 @@ address {
     letter-spacing: 0.02em;
     color: #434455;
     font-weight: 400;
+    text-align: center;
+}
+
+/* Our portfolio */
+
+.section-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
 }
 
 .portfolio {
@@ -148,6 +297,26 @@ address {
     text-transform: capitalize;
     color: #2e2f42;
     font-weight: 700;
+    padding-bottom: 72px;
+}
+
+.list-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.example {
+    width: calc((100% - 48px) / 3);
+
+}
+
+.example-discription {
+    border: 1px solid #e7e9fc;
+    padding: 32px 16px;
+    border-top: none;
+    margin-bottom: 8px
 }
 
 .portfolio-title {
@@ -166,12 +335,17 @@ address {
     font-weight: 400;
 }
 
+/* Footer */
+
+
+
 .footer-p {
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
     font-weight: 400;
     font-size: 16px;
+    max-width: 264px;
 }
 
 .studio-footer {
@@ -180,15 +354,10 @@ address {
 
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0
 }
 
-.table {
-    list-style: none;
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
 }
-a {
-    text-decoration: none;
-}
-ul {
-    list-style: none;
-}
-
