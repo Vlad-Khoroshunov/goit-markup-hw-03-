@@ -140,7 +140,7 @@ address {
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
-    display: flex;
+    display: block;
     width: 496px;
     height: 120px;
 }    
@@ -247,7 +247,7 @@ address {
     font-size: 36px;
     font-weight: 700;
     gap: 8px;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -338,8 +338,8 @@ address {
 }
 
 .footer .container {
-    /* flex убран - теперь блок */
-    display: block; /* или можно не писать, display:block по умолчанию */
+    
+    display: block; 
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
@@ -368,4 +368,8 @@ address {
     font-weight: 400;
     font-size: 16px;
     max-width: 264px;
+}
+
+.container {
+    display: block;
 }
